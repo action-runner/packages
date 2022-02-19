@@ -6,6 +6,7 @@ module.exports = {
     collectCoverageFrom: [
         "**/*.{ts,tsx}",
         "!<rootDir>/node_modules/",
+        "tests/**/*.{ts,tsx}",
         "!index.ts"
     ],
     testTimeout: 20000

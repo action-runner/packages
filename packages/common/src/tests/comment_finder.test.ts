@@ -1,5 +1,5 @@
 import * as github from "@actions/github";
-import { interfaces, commentFinder } from "../src";
+import { interfaces, commentFinder } from "..";
 
 jest.mock("@actions/github");
 
