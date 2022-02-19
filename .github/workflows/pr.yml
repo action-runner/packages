@@ -1,0 +1,21 @@
+# .github/workflows/conventional-pr.yml
+
+name: conventional-pr
+on:
+  pull_request:
+    branches:
+      - main
+      - master
+    types:
+      - opened
+      - edited
+      - synchronize
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    name: Lint PR
+    steps:
+      - name: label
+        uses: action-runner/conventional-labeler@v1
+        with:
+          access_token: ${{ secrets.GITHUB_TOKEN }}
