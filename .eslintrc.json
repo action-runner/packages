@@ -15,6 +15,15 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "quotes": "off"
+        "quotes": "off",
+        "import/no-extraneous-dependencies": "off",
+        "no-restricted-syntax": "off",
+        "no-await-in-loop": "off",
+        "prefer-template": "off",
+        "import/prefer-default-export": "off",
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "no-undef": "off",
+        "comma-dangle": "off"
     }
 }
