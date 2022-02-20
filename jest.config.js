@@ -7,7 +7,8 @@ module.exports = {
         "**/*.{ts,tsx}",
         "!<rootDir>/node_modules/",
         "tests/**/*.{ts,tsx}",
-        "!index.ts"
+        "!index.ts",
+      "!interfaces/**/*.ts"
     ],
     testTimeout: 20000
 };
