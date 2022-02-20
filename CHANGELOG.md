@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.15.0 (2022-02-20)
+
+
+### Features
+
+* export json schema ([#5](https://github.com/action-runner/packages/issues/5)) ([968b987](https://github.com/action-runner/packages/commit/968b987789572541663962e3783017c7ab391e43))
+
+
+
+
+
 ## 1.14.1 (2022-02-20)
 
 
