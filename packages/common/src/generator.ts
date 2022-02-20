@@ -5,8 +5,9 @@ import fs from "fs";
 import { compileFromFile } from "json-schema-to-typescript";
 import path from "path";
 
+const schemaPath = "./src/schemas";
+
 export async function generate() {
-  const schemaPath = "./src/schemas";
   const outputPath = "./src/interfaces";
 
   const files = fs.readdirSync(schemaPath);
@@ -19,4 +20,6 @@ export async function generate() {
   }
 }
 
-generate();
+(async () => {
+  await generate();
+})();
