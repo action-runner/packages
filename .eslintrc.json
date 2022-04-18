@@ -24,6 +24,10 @@
         "import/extensions": "off",
         "import/no-unresolved": "off",
         "no-undef": "off",
-        "comma-dangle": "off"
+        "comma-dangle": "off",
+        "no-continue": "off",
+        "no-use-before-define": "off",
+        "no-unused-vars": "off",
+        "no-shadow": "off"
     }
 }

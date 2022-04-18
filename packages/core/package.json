@@ -1,5 +1,5 @@
 {
-  "name": "@action-runner/common",
+  "name": "@action-runner/core",
   "version": "1.15.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,12 +14,13 @@
   "devDependencies": {
     "@types/jest": "^27.4.0",
     "jest": "^27.5.1",
-    "json-schema-to-typescript": "^10.1.5",
     "ts-jest": "^27.1.3",
-    "ts-node": "^10.5.0"
+    "@action-runner/common": "*",
+    "@action-runner/errors": "*",
+    "yaml": "^1.10.2",
+    "@types/yaml": "^1.9.7"
   },
   "scripts": {
-    "prebuild": "yarn generate",
     "build": "tsc",
     "test": "jest",
     "generate": "ts-node ./src/generator.ts"

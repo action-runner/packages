@@ -3,7 +3,9 @@ import { generate } from "../generator";
 
 jest.mock("fs", () => ({
   writeFileSync: jest.fn(),
-  readdirSync: jest.fn().mockReturnValue(["mock_a.json", "mock_b.json"]),
+  readdirSync: jest
+    .fn()
+    .mockReturnValue(["mock_a.json", "mock_b.json", "index.ts"]),
 }));
 
 jest.mock("json-schema-to-typescript", () => ({
